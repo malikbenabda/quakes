@@ -1,6 +1,5 @@
 package com.smartrecruiters.mba.demo.controller;
 
-import com.smartrecruiters.mba.demo.service.EarthQuakeService;
 import com.smartrecruiters.mba.demo.service.USGCService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
@@ -14,8 +13,6 @@ import java.util.List;
 @RestController
 public class EarthQuakeController {
 
-    @Autowired
-    EarthQuakeService quakeService;
     @Autowired
     USGCService usgcService;
     @GetMapping("/quakes")

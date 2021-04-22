@@ -1,4 +1,4 @@
-package com.smartrecruiters.mba.demo.service;
+package com.smartrecruiters.mba.demo.utils;
 
 import com.smartrecruiters.mba.demo.domain.Location;
 

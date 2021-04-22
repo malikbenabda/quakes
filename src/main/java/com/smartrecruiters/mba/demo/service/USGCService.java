@@ -3,6 +3,7 @@ package com.smartrecruiters.mba.demo.service;
 import com.smartrecruiters.mba.demo.domain.EarthQuakeInfoResponse;
 import com.smartrecruiters.mba.demo.domain.EarthquakePoint;
 import com.smartrecruiters.mba.demo.domain.Location;
+import com.smartrecruiters.mba.demo.utils.DistanceCalculator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
