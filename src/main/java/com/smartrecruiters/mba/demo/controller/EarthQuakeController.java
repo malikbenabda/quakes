@@ -25,11 +25,10 @@ public class EarthQuakeController {
 //        return "quakes";
 //    }
     @ResponseBody
-    public ModelAndView nearbyQuakeList(Model model1, ModelAndView model, @RequestParam Double lat, @RequestParam Double lon){
+    public ModelAndView nearbyQuakeList(Model model1, @RequestParam Double lat, @RequestParam Double lon){
 
         //model.addAttribute("quakes", usgcService.getEarthquakesAround(lat,lon));
         List<String> listOfPlaces = usgcService.calculateNearestEarthquakes(lat,lon);
-        model.addObject("quakes", listOfPlaces);
         model1.addAttribute("quakes", listOfPlaces);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("quakes.html");
