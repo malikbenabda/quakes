@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="https://thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>index</title>
 </head>
 <body>
-<span>wrlo</span>
+
+<table>
+    <tr th:each="user: ${quakes}">
+        <td><h4 th:text="${user}"></h4></td>
+    </tr>
+</table>
 </body>
 </html>
+
