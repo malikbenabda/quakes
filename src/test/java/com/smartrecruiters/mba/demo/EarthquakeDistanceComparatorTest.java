@@ -53,12 +53,12 @@ public class EarthquakeDistanceComparatorTest {
         Location a1 = new Location(41.3925603, 2.1418532);
         Location a2 = new Location(41.3870194, 2.1678584);
 
-        assertEquals(2.0, DistanceCalculator.calculateDistance(a1, a2), 0.5);
+        assertEquals(2.255, DistanceCalculator.calculateDistance(a1, a2), 0.01);
     }
 
 
     @Test
-    public void testPojo() {
+    public void isTestRestTemplateOn() {
         String restUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
         TestRestTemplate testRestTemplate = new TestRestTemplate();
         ResponseEntity<String> response = testRestTemplate.
