@@ -1,4 +1,4 @@
-package com.smartrecruiters.mba.demo.domain;
+package com.smartrecruiters.mba.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

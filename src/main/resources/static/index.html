@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>index</title>
 </head>
 <body>
 <form action="/quakes">
+    <H2> Please insert coordinates </H2>
 <label>Latitude : </label>
-<input name="lat" />
+<input name="lat" type="number" step="any" value="0"/>
 
 <label>Longitude : </label>
-<input name="lon" />
+<input name="lon" type="number" step="any"  value="0"/>
     <button type="submit" >Submit </button>
     <button type="reset" >Reset </button>
+    </br>
+    <table>
+        <tr th:each="quake: ${quakes}">
+            <td><p th:text="${quake}"></p></td>
+        </tr>
+    </table>
+    <pre th:text="${error}"></pre>
 </form>
 </body>
 </html>

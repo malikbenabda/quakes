@@ -1,4 +1,4 @@
-package com.smartrecruiters.mba.demo.domain;
+package com.smartrecruiters.mba.demo.model;
 
 import java.util.Objects;
 

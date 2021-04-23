@@ -1,6 +1,6 @@
 package com.smartrecruiters.mba.demo.config;
 
-import com.smartrecruiters.mba.demo.domain.EarthQuakeInfoResponse;
+import com.smartrecruiters.mba.demo.model.EarthQuakeInfoResponse;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;

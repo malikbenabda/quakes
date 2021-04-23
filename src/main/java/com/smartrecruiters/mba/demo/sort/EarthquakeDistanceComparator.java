@@ -1,6 +1,6 @@
 package com.smartrecruiters.mba.demo.sort;
 
-import com.smartrecruiters.mba.demo.domain.EarthquakePoint;
+import com.smartrecruiters.mba.demo.model.EarthquakePoint;
 import com.smartrecruiters.mba.demo.utils.DistanceCalculator;
 
 import java.util.Comparator;

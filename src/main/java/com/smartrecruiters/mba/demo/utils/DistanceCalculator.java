@@ -1,6 +1,6 @@
 package com.smartrecruiters.mba.demo.utils;
 
-import com.smartrecruiters.mba.demo.domain.Location;
+import com.smartrecruiters.mba.demo.model.Location;
 
 import static java.lang.Math.*;
 
